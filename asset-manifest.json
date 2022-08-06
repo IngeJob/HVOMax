@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/HVOMax/static/css/main.c0d28666.css",
-    "main.js": "/HVOMax/static/js/main.d8a260f4.js",
+    "main.js": "/HVOMax/static/js/main.d011e6ef.js",
     "index.html": "/HVOMax/index.html",
     "main.c0d28666.css.map": "/HVOMax/static/css/main.c0d28666.css.map",
-    "main.d8a260f4.js.map": "/HVOMax/static/js/main.d8a260f4.js.map"
+    "main.d011e6ef.js.map": "/HVOMax/static/js/main.d011e6ef.js.map"
   },
   "entrypoints": [
     "static/css/main.c0d28666.css",
-    "static/js/main.d8a260f4.js"
+    "static/js/main.d011e6ef.js"
   ]
 }
