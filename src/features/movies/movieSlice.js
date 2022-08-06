@@ -1,4 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+// import axios from 'axios';
 
 import movieApi from '../../common/apis/movieApi';
 import { APIKEY } from '../../common/apis/MovieApiKey';
@@ -7,7 +8,7 @@ export const fetchAsyncMovies =  createAsyncThunk('movies/fetchAsyncMovies',
     async (term) =>{
 
         const request = await movieApi
-            .get(`?apiKey=${APIKEY}&s=${term}&type=movie`)
+            .get(`/?apiKey=${APIKEY}&s=${term}&type=movie`)
         return request.data;
     }
 );
@@ -16,7 +17,7 @@ export const fetchAsyncSeries =  createAsyncThunk('movies/fetchAsyncSeries',
     async (term) =>{
 
         const request = await movieApi
-            .get(`?apiKey=${APIKEY}&s=${term}&type=series`)
+            .get(`/?apiKey=${APIKEY}&s=${term}&type=series`)   
         return request.data;
     }
 );
@@ -24,7 +25,7 @@ export const fetchAsyncSeries =  createAsyncThunk('movies/fetchAsyncSeries',
 export const fetchAsyncMovieOrSerieDetail =  createAsyncThunk('movies/fetchAsyncMovieOrSerieDetail', 
     async (id) =>{
         const request = await movieApi
-            .get(`?apiKey=${APIKEY}&i=${id}&Plot=full`)
+            .get(`/?apiKey=${APIKEY}&i=${id}&Plot=full`)    
         return request.data;
     }
 );
@@ -52,7 +53,7 @@ const movieSlice = createSlice({
             return {...state, movies: payload}
         },
         [fetchAsyncMovies.rejected]: () => {
-            //console.log("Rejected");
+            console.log("Rejected");
         },
         [fetchAsyncSeries.fulfilled]: (state, {payload}) => {
             //console.log("Fetched");
