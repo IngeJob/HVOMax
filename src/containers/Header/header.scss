@@ -1,0 +1,56 @@
+.app__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: var(--secondary-color);
+    height: 72px;
+    padding: 0px 40px;
+}
+
+.app__header-logo{
+    color: var(--font-primary);
+    font-size: 20px;
+    font-weight: 600;
+
+    img{
+        height: 50px;
+    }
+}
+
+
+
+.app__header-user, 
+.app__header-user svg{
+    width: 36px;
+    height: 36px;
+    color: var(--font-primary);
+    cursor: pointer;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+    form{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+
+        button{
+            padding: 0 8px;
+            font-size: 20px;
+            height: 38px;
+            cursor: pointer;
+        }
+    }
+
+    input{
+        font-size: 18px;
+        width: 100%;
+        height: 38px;
+        padding: 5px 5px 5px 10px;
+        outline: none;
+    }
+}
