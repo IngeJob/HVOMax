@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HVOMax/static/css/main.c0d28666.css",
+    "main.js": "/HVOMax/static/js/main.8904f9a2.js",
+    "index.html": "/HVOMax/index.html",
+    "main.c0d28666.css.map": "/HVOMax/static/css/main.c0d28666.css.map",
+    "main.8904f9a2.js.map": "/HVOMax/static/js/main.8904f9a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0d28666.css",
+    "static/js/main.8904f9a2.js"
+  ]
+}
